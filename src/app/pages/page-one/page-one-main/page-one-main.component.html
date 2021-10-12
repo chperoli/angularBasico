@@ -1,0 +1,10 @@
+<p>page-one works!</p>
+
+<div>
+	<app-checkbox [title]="'Só um teste'"
+			[hint]="'clique!'"
+			[checkText]="'Selecione aqui!'"
+			[(checked)]="checked"
+			(fieldChange)="changeCheckbox($event.checked)">
+	</app-checkbox>
+</div>

@@ -1,0 +1,19 @@
+<div class="row no-margin">
+	<div class="col no-padding">
+		<label class="form-label">&nbsp;{{title}}</label>
+	</div>
+</div>
+<div class="row no-margin">
+	<div class="col no-padding">
+		<mat-checkbox color="primary"
+				[(checked)]="checked"
+				(change)="fieldChange.emit($event); testando($event)">
+			{{checkText}}
+		</mat-checkbox>
+	</div>
+</div>
+<div class="row no-margin">
+	<div class="col no-padding">
+		<label class="form-label">{{hint}}</label>
+	</div>
+</div>
